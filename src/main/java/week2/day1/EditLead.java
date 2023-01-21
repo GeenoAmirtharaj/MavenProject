@@ -45,6 +45,10 @@ public class EditLead {
 		 driver.findElement(By.id("updateLeadForm_importantNote")).sendKeys("This is Important Note");
 		 driver.findElement(By.name("submitButton")).click();
 		 System.out.println("Title is "+ driver.getTitle());
+		 if(driver.getTitle().trim().contains("View Lead"))
+			 System.out.println("Title is contains View Lead");
+		 else
+			 System.out.println("Title is Incorrect");
 		 driver.close();
 	}
 

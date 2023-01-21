@@ -40,6 +40,10 @@ public class DuplicateLead {
 		 driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("testleaf@gmail.com");
 		 driver.findElement(By.name("submitButton")).click();
 		 System.out.println("Title is "+ driver.getTitle());
+		 if(driver.getTitle().trim().contains("View Lead"))
+			 System.out.println("Title is as View Lead");
+		 else
+			 System.out.println("Title is Incorrect");
 		 
 		 //Duplicate Lead
 		 driver.findElement(By.linkText("Duplicate Lead")).click();
@@ -51,6 +55,10 @@ public class DuplicateLead {
 		 firstName.sendKeys("White");
 		 driver.findElement(By.name("submitButton")).click();
 		 System.out.println("Title is "+ driver.getTitle());
+		 if(driver.getTitle().trim().contains("View Lead"))
+			 System.out.println("Title is contains View Lead");
+		 else
+			 System.out.println("Title is Incorrect");
 		 driver.close();
 	}
 
