@@ -1,4 +1,4 @@
-package week2.day1;
+package week2.day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class CreateLead {
 
 	public static void main(String[] args) {
-		 WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//Opening a Browser
 		ChromeDriver driver=new ChromeDriver();
 		 
